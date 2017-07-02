@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Выставка современного исскуства</title>
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<!-- этот файл нормализует все настройки браузера по умолчанию кс настройками верстки-->
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+	<!-- если подключаю 2 шрифта из гугл, то ссылку ЗАМЕНЯТЬ, она генерится новая на оба шрифта сразу, а в CSS пишем font-family выбранного шрифта.
+
+	все стили и библиотеки подключаются тут - выше css файла, дабы они не перебивали по приоритетности наш css -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- хидер -->
+<header class="z-index-top">
+
+<div class="nav-wrap">
+	<div class="container">
+		<div class="logo">
+			<a href="#"><img src="img/logo.svg" alt=""></a>
+		</div>
+
+		<!-- меню -->
+		<nav>
+			<div class="nav">
+				<ul>
+					<li><a class="m-active" href="#">информация</a></li>
+					<li><a href="#">участники</a></li>
+					<li><a href="#">программа</a></li>
+					<li><a href="#">контакты</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+</div>
+	
+<!-- назначаем контейнеру внутренние поля паддинг, выравниважние маржин авто (по центру), отображать блоком жисплей:блок, и макс ширину. теперь при изменении размера окна контент в блоке ведет себя адекватно. -->
+<div class="container">	
+	<h1>Выставка<br>современного<br>исскуства</h1>
+	<div class="btn">
+		<a class="btn-info" href="#">информация</a>
+	</div>
+</div>
+</header>
+
+<!-- осн контент -->
+<article>
+
+<!-- екран 1 -->
+<section class="main">
+<div class="container z-index-top">
+<!-- класс контейнер задает ширину контента на сайте. -->
+	<p>
+		15 февраля в 18.30 в арт-пространстве CITYclub состоится торжественное открытие нового масштабного проекта – выставки современного искусства, в которой примут участие ведущие художники Украины. 
+	</p>
+	<p>
+		Общество переживает кризис правды и на пути к освобождению сознания человек встречает немало препятствий. Современная личность вынуждена подстраиваться под требования, ожидания и стереотипы внешнего окружения. Художественный проект Lumen — это попытка художников пролить свет на истинные чувства и желания, душевные качества, которые остались в тени, из-за страха быть отвергнутым.
+	</p>
+	</div>
+</section>
+
+<img class="flower1" src="img/flower1.png" alt="flower">
+
+<img class="flower2" src="img/flower2.png" alt="flower">
+	
+</article>
+
+<!-- футер -->
+<footer>
+
+<img class="flower3" src="img/flower3.png" alt="flower">
+
+	<div class="container">
+		<div class="copy z-index-top">
+			<p>
+				<span>Горишние плавни 2017г.</span>
+				все права защищены. копирование только с разрешения правообладателя
+			</p>
+		</div>
+
+		<div class="social z-index-top">
+			<a href="#"><img src="img/social/vk.svg" alt=""></a>
+			<a href="#"><img src="img/social/facebook.svg" alt=""></a>	
+			<a href="#"><img src="img/social/twitter.svg" alt=""></a>
+			<a href="#"><img src="img/social/google-plus.svg" alt=""></a>
+			<a href="#"><img src="img/social/email.svg" alt=""></a>	
+		</div>
+		
+		<div class="clear"></div>
+	</div>
+</footer>
+
+
+</body>
+</html>
+
