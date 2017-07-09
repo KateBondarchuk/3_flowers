@@ -244,7 +244,7 @@ header .descr {
   margin-top: 34px;
 }
 .sec-4 .card .bt-card:hover {
-  background-color: red;
+  background-color: @hover-red;
 }
 .img-wrap {
   height: 260px;
