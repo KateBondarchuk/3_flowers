@@ -1,0 +1,597 @@
+@font-face {
+	font-family: 'Gotham Pro Black';
+	src: url('../fonts/GothamPro-Black.eot');
+	src: url('../fonts/GothamPro-Black.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro-Black.woff2') format('woff2'),
+		url('../fonts/GothamPro-Black.woff') format('woff'),
+		url('../fonts/GothamPro-Black.ttf') format('truetype'),
+		url('../fonts/GothamPro-Black.svg#GothamPro-Black') format('svg');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Pro Bold';
+	src: url('../fonts/GothamPro-Bold.eot');
+	src: url('../fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro-Bold.woff2') format('woff2'),
+		url('../fonts/GothamPro-Bold.woff') format('woff'),
+		url('../fonts/GothamPro-Bold.ttf') format('truetype'),
+		url('../fonts/GothamPro-Bold.svg#GothamPro-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Pro Medium';
+	src: url('../fonts/GothamPro-Medium.eot');
+	src: url('../fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro-Medium.woff2') format('woff2'),
+		url('../fonts/GothamPro-Medium.woff') format('woff'),
+		url('../fonts/GothamPro-Medium.ttf') format('truetype'),
+		url('../fonts/GothamPro-Medium.svg#GothamPro-Medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@bg-color: #dedede;
+@bg-color-s2: #f4f4f4;
+@white: #fff;
+@black: #202020;
+@red: #d25b55;
+@hover-red: #a9252a;
+@text-color: #515151;
+@h-color: #4c4c4c;
+@h3-color: #9fa2a5;
+@border: #a1a1a1;
+@card-bg: #595959;
+@footer-bg: #f9f9f9;
+
+a, a:hover, a:active, a:visited {
+	text-decoration: none;
+		}
+
+h2 {
+	font-family: 'Gotham Pro Black', sans-serif;
+	font-size: 90px;
+	text-transform: uppercase;
+	color: @white;
+	line-height: 1.2em;
+
+}
+
+/* первый екран */
+
+header {
+	background-color: @bg-color;
+	text-align: center;
+	h1 {
+		font-family: 'Gotham Pro Black', sans-serif;
+		font-size: 90px;
+		text-transform: uppercase;
+		color: @white;
+		margin-top: 160px;
+		line-height: 1.2em;
+		margin-bottom: 25px;
+	}
+
+	.descr {
+		color: @white;
+		font-size: 14px;
+		font-family: 'Gotham Pro Medium', sans-serif;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		margin: 0;
+		padding: 0;
+		margin-bottom: 27px;
+	}
+
+}
+
+.logo {
+	width: 46px;
+	height: 46px;
+	margin-top: 48px;
+	margin-left: 48px;
+}
+
+.basket {
+	float: right;
+	width: 46px;
+	height: 46px;
+	margin-top: 48px;
+	margin-right: 48px;
+
+}
+
+.menu {
+	display: block;
+	margin-top: 66px;
+	text-align: center;
+	padding: 0;
+	
+	li {
+		display: inline-block;
+		text-align: center;
+		margin: 0 15px;
+		padding: 0;
+
+	}
+	a {
+		font-size: 14px;
+		color: @white;
+		font-family: 'Gotham Pro Medium', sans-serif;
+		letter-spacing: 4px;
+		text-transform: uppercase;
+
+	}
+
+}
+
+.bt {
+	display: inline-block;
+	width: 172px;
+	height: 52px;
+	text-align: center;
+	border-radius: 26px;
+	color: @white;
+	font-family: 'Gotham Pro Bold', sans-serif;
+	font-size: 12px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	padding-top: 19px;
+	vertical-align: middle;
+	&:hover {
+		color: @white;
+	}
+}
+
+.bt-red {
+	background-color: @red;
+	&:hover {
+		background-color: @hover-red;
+	}
+}
+
+.bt-white {
+	padding-top: 16px;
+	// компенсируем высоту бордера - уменьшаем паддинг для текста на 3 пк.
+	border: 3px solid @white;
+	margin-left: 20px;
+	&:hover {
+		background-color: @hover-red;
+		border-color: @hover-red;
+	}
+}
+
+
+
+.pencil-head {
+	padding-bottom: 65px;
+	max-width: 100%; 
+	padding-top: 10px;
+}
+
+/* конец первого екрана */
+
+/* второй екран */
+
+.sec-2 {
+	margin: 0;
+	padding: 0;
+	background: @bg-color-s2 url("../img/Pencils2.png") 20% 100% no-repeat fixed;
+// 20% это отступ слева, 100% это отступ сверху - тоесть изобр отступает от верха сайта такую же высоту как он сам.
+}
+
+// .parallax-window {
+// 	   background: transparent;
+// }
+
+.sec-2-cont {
+	font-family: 'Gotham Pro Medium', sans-serif;
+	font-size: 16px;
+	color: @text-color;
+	margin-top: 174px;
+	margin-bottom: 139px;
+}
+/* конец второго екрана */
+
+
+/* третий екран */
+
+.sec-3 {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	// задаем боку позиционирование относительное, чтобы бомбу на абсолюте загнать по координатам блока.
+	text-align: center;
+	background-color: @bg-color;
+	color: @white;
+	padding-bottom: 100px;
+	h2 {
+		padding-top: 30px;
+	}
+	h3 {
+		font-size: 24px;
+		font-family: 'Gotham Pro Bold', sans-serif;
+		text-transform: uppercase;
+		list-style-type: 2px;
+		padding-top: 50px;
+	}
+	p {
+		font-size: 21px;
+		font-family: 'Gotham Pro Medium', sans-serif;
+		padding-bottom: 20px;
+	}
+}
+
+.bomb {
+	position: absolute;
+	right: 0;
+	top: 0;
+	max-width: 60%;
+
+}
+
+.col-1 {
+	background: url(../img/icon1.svg) 50% 50% no-repeat;
+}
+
+.col-2 {
+	background: url(../img/icon2.svg) 50% 70% no-repeat;
+}
+
+.col-3 {
+	background: url(../img/icon3.svg) 50% 40% no-repeat;
+}
+
+/* конец 3-го екрана */
+
+
+/* 4й екран */
+.sec-4 {
+	position: relative;
+	text-align: center;
+	padding-bottom: 50px;
+
+
+	.img-4 {
+		position: absolute;
+		top: -60px;
+		left: 15px;
+
+	}
+
+	h2 {
+		color: @h-color;
+		margin-bottom: 0;
+		padding-bottom: 0;
+		line-height: 1;
+	}
+	.h3 {
+		margin-top: 0;
+		padding-top: 10px;
+		font-family: 'Gotham Pro Medium', sans-serif;
+		font-size: 16px;
+		color: @h3-color;
+		margin-bottom: 50px;
+	}
+
+	
+	h3 {
+		color: @black;
+		font-family: 'Gotham Pro Black', sans-serif;
+		font-size: 14px;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+	}
+
+	.card {
+		margin-top: 50px;
+		border: 1px solid #fff;
+		border-radius: 5px;
+		// задаем невидимый бордер, чтобы картинка не прыгала на высоту 1 пк бордера, при наведении. а так он уже есть, поменяется тольк оцвет.
+		p {
+			color: @h3-color;
+			font-family: 'Gotham Pro Medium', sans-serif;
+			font-size: 14px;
+			margin-bottom: 23px;
+		}
+		.price {
+		font-family: 'Arvo', serif;
+		font-size: 60px;
+		color: @black;
+		margin: 0;
+		padding: 0;
+		line-height: 1;
+		}
+
+		&:hover {
+			border: 1px solid #a1a1a1;
+			background-color: @card-bg;
+			.bt-card {
+				background-color: @red;
+			}
+		}
+		.bt-card {
+			margin-bottom: 37px;
+			margin-top: 34px;
+			// width: 161px;
+			// height: 47px;
+			// padding-top: 16px;
+			&:hover {
+				background-color: red;
+			}
+		}
+	}
+}
+
+.img-wrap {
+	height: 260px;
+	position: relative;
+	img {
+		position: absolute;
+		right:-15px;
+		bottom: 0;
+	}
+}
+
+/* конец 4-го екрана */
+
+
+/* 5й екран */
+
+.sec-5 {
+	text-align: center;
+	position: relative;
+	h2 {
+		color: @h-color;
+		text-transform: none;
+		font-size: 60px;
+		line-height: 1;
+		position: relative;
+		z-index: 300;
+		margin-bottom: 100px;
+
+
+	}
+}
+
+.paper {
+	position: absolute;
+	display: block;
+	margin: auto;
+	padding-left: 100px;
+	top: 50px;
+	max-width: 100%;
+}
+
+.form1 {
+	position: relative;
+	text-align: left;
+	margin: auto;
+	margin-bottom: -25px;
+	z-index: 301;
+	display: block;
+	height: 49px;
+	width: 313px;
+	background: url('../img/mail_bt_bg.png') 0% 0% no-repeat;
+	.email {
+		height: 42px;
+		width: 230px;
+		margin-left: 30px;
+		border: none;
+		padding-left: 20px;
+		font-size: 16px;
+		margin-top: 4px;
+	}
+	.bt-form {
+		background-color: @red;
+		border: none;
+		height: 40px;
+		width: 44px;
+		// margin-top: 3px;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+		color: @white;
+		&:hover {
+			background-color: @hover-red;
+		}
+
+
+	}
+}
+/* конец 5-го екрана */
+
+
+
+/* футер*/
+
+footer {
+	
+	background-color: @footer-bg;
+	.row {
+		margin-top: 316px;
+		
+	}
+
+	.social-icon {
+		text-align: right;
+		a {
+			color: @h3-color;
+			margin-left: 2px;
+			&:hover {
+				color: @hover-red;
+			}
+		}
+		/* .insta:hover {
+			color: blue;
+			
+		} */
+	}
+
+}
+
+.banking {
+	text-align: right;
+	margin-top: 20px;
+	margin-bottom: 45px;
+	a {
+		margin-left: 5px;
+	}
+
+}
+
+.copy {
+	padding-top: 40px;
+}
+/* конец футера */
+
+
+/* Large desktops and laptops col-xl- */
+@media (min-width: 1200px) {
+
+}
+
+/* Portrait tablets and medium desktops col-lg- */
+@media (min-width: 992px) and (max-width: 1199px) {
+	.bomb {
+		width: 600px;
+	}
+}
+
+/* Portrait tablets and small desktops col-md- */
+@media (max-width: 991px) {
+	.logo {
+		margin-left: 0;
+	}
+	.basket {
+		margin-right: 0;
+	}
+	.menu li {
+		margin: 0 10px;
+		}
+		a {
+			letter-spacing: 1px;
+		}
+	header h1 {
+		font-size: 70px;
+
+	}
+	.sec-2-cont {
+		background-color: rgba(244, 244, 244, 0.5);
+		padding: 20px 10px;
+		border-radius: 5px;
+	}
+	h2 {
+		font-size: 70px;
+	}
+
+	.bomb {
+		width: 500px;
+	}
+
+	.paper {
+	padding-left: 0px;
+	width: 80%;
+	top: 20px;
+	}
+	
+}
+
+/* Landscape phones and portrait tablets col-sm- */
+@media (max-width: 767px) {
+	.menu {
+			
+			a {
+				letter-spacing: 1px;
+				font-size: 12px;
+			}
+	}
+	header h1 {
+		font-size: 50px;
+	}
+	h2 {
+		font-size: 45px;
+	}
+	.sec-4 {
+		.img-4 {
+		width: 250px;
+		top: -42px;
+		}
+	
+		.h3 {
+		margin-bottom: 0px;
+		}
+	}
+	.sec-5 h2 {
+		font-size: 45px;
+		padding: 0 20px;
+	}
+
+	footer .row {
+		margin-top: 200px;
+	}
+}
+
+
+
+
+/* Landscape phones and smaller col-xs- */
+@media (max-width: 480px) {
+	.menu {
+			li {
+				margin: 0 3px;
+			}
+			a {
+				letter-spacing: 0;
+				font-size: 11px;
+			}
+	}
+	header h1 {
+		font-size: 40px;
+	}
+	h2 {
+		font-size: 35px;
+	}
+	.sec-3 h2 {
+		padding-top: 30px;
+	}
+	
+	.sec-4 .img-4 {
+		width: 200px;
+		top: -34px;
+		
+	}
+
+	.sec-4 .h3 {
+		margin-bottom: 0px;
+	}
+	.sec-5 h2 {
+		font-size: 35px;
+	}
+	.paper {
+	padding-left: 0px;
+	width: 80%;
+	top: 120px;
+	}
+
+	footer {
+		.row {
+			margin-top: 100px;
+		}
+		.social-icon {
+			text-align: center;
+		}
+		.banking {
+			text-align: center;
+		}
+		.copy {
+			text-align: center;
+		}
+	}
+}
+
+
+
+
