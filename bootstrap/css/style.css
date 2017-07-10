@@ -7,41 +7,38 @@ font-family: 'Quicksand', sans-serif; */
 body {
   text-align: center;
 }
-.title1 {
-  background-color: #ddd;
+.header {
   text-align: center;
   display: block;
-  padding: 30px;
+  padding: 40px;
 }
-.title {
+.header .title {
   font-family: 'Bubbler One', sans-serif;
   color: #871682;
   font-size: 36px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
-.title img {
+.header .title img {
   width: 403px;
   height: 10px;
 }
-.subtitle {
+.header .subtitle {
   font-family: 'Quicksand', sans-serif;
   color: #312631;
   font-size: 16px;
-  padding-top: 25px;
+  padding-top: 20px;
   font-weight: 400;
 }
 .container {
   display: inline-block;
 }
-.col-md-3 {
-  margin-top: 0px;
-  display: block;
+.block1 img {
+  width: 100%;
 }
 .price {
   display: block;
   text-align: center;
   background-color: #a4d555;
-  width: 261px;
   height: 60px;
   font-family: 'Quicksand', sans-serif;
   font-weight: 500;
@@ -50,18 +47,17 @@ body {
   color: #871682;
   font-size: 24px;
 }
-.price p .price-old {
+.price .price-old {
   color: #312631;
   font-size: 20px;
   text-decoration: line-through;
   display: inline-block;
-  margin-top: 20px;
+  padding-top: 17px;
 }
 .name {
   text-align: center;
   display: block;
   background-color: #4adff5;
-  width: 261px;
   height: 60px;
   margin-bottom: 20px;
   margin-top: 0;
@@ -69,16 +65,18 @@ body {
 }
 .name p {
   color: #871682;
-  font-size: 16px;
+  font-size: 14px;
   font-family: 'Quicksand', sans-serif;
   text-transform: uppercase;
-  padding-top: 20px;
+  padding: 20px 5px;
 }
-
-
+.name-big p {
+  padding: 10px 5px;
+}
 .button {
-	background-color: #a4d555;
-	width: 200px;
-	height: 40px;
-	border-radius: 20px;
+  background-color: #a4d555;
+  width: 50%;
+  height: 40px;
+  border-radius: 20px;
+  margin-bottom: 20px;
 }
